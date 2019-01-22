@@ -1,0 +1,16 @@
+body {
+  font-family: Helvetica;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+span {
+  color: #8D0801;
+}
+
+span #advice {
+  color: #708D81;
+  font-size: 38px;
+}
