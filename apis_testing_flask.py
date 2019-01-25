@@ -90,17 +90,17 @@ def choose_visitor(user_number):
     user_number = int(user_number)
     while user_number > 6:
         user_number = user_number % 2
-    if user_number ==1:
+    if user_number <= 1:
         visitor = "wizard"
-    elif user_number ==2:
+    elif user_number > 1 and user_number <= 2:
         visitor = "dragon"
-    elif user_number ==3:
+    elif user_number > 2 and user_number <= 3:
         visitor = "mysterious floating figure clothed in black"
-    elif user_number ==4:
+    elif user_number > 3 and user_number <=4:
         visitor = "witch"
-    elif user_number ==5:
+    elif user_number > 4 and user_number <=5:
         visitor = "unicorn"
-    elif user_number ==6:
+    elif user_number > 5 and user_number <=6:
         visitor = "elf"
         print(visitor)
     return visitor
