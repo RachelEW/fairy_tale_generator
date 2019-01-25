@@ -1,5 +1,18 @@
 {% extends "layout.html" %}
 
 {% block content %}
-<a href="generate">Generate Story</a>
+<div id ="user_choice_1">
+  <form method="post" action="/generate">
+
+
+    <label for="animal">Choose an animal</label>
+    <input type="animal" id="animal" name="animal" required="required" />
+    <label for="animal">Choose a number from 1 - 6</label>
+    <input type="number" id="number" name="number" required="required" />
+
+    <input class="generate-button" type="submit" id="generate-button" name="generate-button" value="Generate Story"  />
+  </form>
+</div>
+
+<!-- <a class="generate-button" href="generate">Generate Story</a> -->
 {% endblock %}
